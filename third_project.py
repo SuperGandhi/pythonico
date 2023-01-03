@@ -1,4 +1,11 @@
-string = "ordenador"
-result = string.index("let")
+# line_string = "Coming soon"
+# result = line_string.index("o", 3)
+# print(result)
 
-print(result)
+
+text = "ABCDFGHIJKLMNOPQRSTUVWXYZ"
+              #[start,end,secuence]
+fragment = text[2:5:2]
+               #CF 
+fragment = text[::-1] # inverse order
+print(fragment)

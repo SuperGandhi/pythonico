@@ -9,3 +9,4 @@ print(phrase_one[10:-1:3])
 # Invierte la posición de todos los caracteres de la siguiente frase y muestra el resultado en pantalla
 phrase_three = "Nunca confíes en un ordenador que no puedas lanzar por una ventana"
 print(phrase_one[::-1])
+

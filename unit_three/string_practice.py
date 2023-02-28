@@ -22,3 +22,5 @@ Práctica Propiedades de Strings 3 Muestra en pantalla el largo (en números de 
 
 word = "electroencefalografista"
 print(len(word))
+
+

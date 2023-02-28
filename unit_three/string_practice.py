@@ -14,4 +14,11 @@ Práctica Propiedades de Strings 2 Verifica si la palabra "agua" no se encuentra
 haiku = "Tierra mojada, mis recuerdos de viaje entre las lluvias Tierra mojada mis recuerdos de viaje, entre las lluvias"
 
 print(haiku in "agua")
-print(haiku not in "agua")
+
+"""
+Práctica Propiedades de Strings 3 Muestra en pantalla el largo (en números de caracteres) de la palabra electroencefalografista.
+
+"""
+
+word = "electroencefalografista"
+print(len(word))

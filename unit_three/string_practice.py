@@ -24,3 +24,4 @@ word = "electroencefalografista"
 print(len(word))
 
 
+

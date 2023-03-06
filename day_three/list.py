@@ -12,6 +12,7 @@ Práctica Listas 2 Agrega el elemento "motocicleta" a la siguiente lista de medi
 
 medios_transporte = ["avión", "auto", "barco", "bicicleta"]
 medios_transporte.append("motocicleta ")
+# medios_transporte.sort(reverse=True)
 print(medios_transporte)
 
 """

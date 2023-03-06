@@ -18,5 +18,4 @@ print(f"We find the '{letters_user[0]}' repeat{amount_letters1} times")
 
 print(f"We find the '{letters_user[1]}' repeat{amount_letters1} times")
 
-
 print(f"We find the '{letters_user[2]}' repeat{amount_letters1} times")

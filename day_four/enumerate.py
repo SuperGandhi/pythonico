@@ -8,14 +8,16 @@ lista_nombres = ["Marcos", "Laura", "Mónica", "Javier", "Celina", "Marta", "Dar
 for indice,nombre in enumerate(lista_nombres):
     print(f'{nombre} se encuentra en el índice {indice}')
 
-
-
-
 """
 
    Práctica Enumerador 2 Crea una lista formada por las tuplas (indice, elemento), formadas a partir de obtener mediante enumerate() los índices de cada caracter del string "Python". Llama a la lista obtenida con el nombre de variable lista_indices . "Python"
 
 """
+
+
+lista_indices = "Python"
+for indice,elemento in enumerate(lista_indices):
+   print(f'{indice} -> {elemento}')    
 
 
 

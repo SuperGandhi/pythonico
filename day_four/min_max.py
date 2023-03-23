@@ -32,3 +32,5 @@ edad_minima = min(diccionario_edades.values())
 keys_edades = diccionario_edades.keys() 
 ultimo_nombre = max(diccionario_edades.keys())
 print(f"Revirtiendo el orden alfabético : {ultimo_nombre} es el último de la lista  y la edad minima de los participantes es {edad_minima}")
+
+

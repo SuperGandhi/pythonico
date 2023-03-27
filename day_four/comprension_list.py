@@ -28,3 +28,6 @@ print(valores_pares)
 temperatura_fahrenheit = [32, 212, 275]
 grados_celsius = [(grado_celsius - 32 ) * (5/9) for grado_celsius in temperatura_fahrenheit]
 print(grados_celsius)
+
+
+

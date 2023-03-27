@@ -1,16 +1,24 @@
+from random import randint
 
-greeting_user = input("What is your name?: ")
-print(f"Hi {greeting_user} think one number between 1 and 100 you only have eight tries to guess it!, Let's go!")
 
-entry_user_number = int(input("Please entry your number: "))
+trying_find_number = 0
+greeting_user_trying = 0
+secret_number = randint(1,100)
+user_name = input("Tell me your name: ")
 
-if entry_user_number < 1 and entry_user_number > 100:
-   print("Este número no está permitido")
-elif entry_user_number < 1 and entry_user_number < 100:
-   print("El número ingresado es menor")
-elif entry_user_number > 100:
-   print("El número ingresado es mayor")
-elif entry_user_number == entry_user_number.random():
-   print("Ganaste!")
-else:
-   print("Sigue intentando!")
+print(f"Hi {user_name} you have eight chances to guess the secret number, don't forget think a number between 1 and 100")
+
+while trying_find_number < 8:
+   greeting_user_trying = int(input("What is the number?: "))
+   trying_find_number += 1
+
+   if greeting_user_trying < secret_number:
+      print("The number is a litle bit more large")
+   elif greeting_user_trying > secret_number:
+      print("The number is a litle bit more small")
+   elif greeting_user_trying != secret_number:
+      print(f"I'm sorry, you don't have any more chances")
+   else:
+      print(f"Congratulations! {user_name} Your rock! in {trying_find_number} tries")
+
+   

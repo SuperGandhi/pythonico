@@ -26,5 +26,9 @@ Práctica Métodos y Ayuda 3 Verifica si los sets a continuación forman conjunt
 marcas_smartphones = {"Samsung", "Xiaomi", "Apple", "Huawei", "LG"} 
 marcas_tv = {"Sony", "Philips", "Samsung", "LG"}
 result_joint = marcas_smartphones.isdisjoint(marcas_tv)
-print(result_joint)
+print(result_joint)  
+
+
+
+
 

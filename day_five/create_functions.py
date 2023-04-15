@@ -5,7 +5,8 @@ Práctica Crear Funciones 1 Declara una función llamada saludar, que cada vez q
 def greeting():
     return("Hi World")
 
-print(greeting())
+result = greeting()
+print(result)  
 
 
 

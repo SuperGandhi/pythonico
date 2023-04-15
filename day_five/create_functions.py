@@ -3,9 +3,9 @@ Práctica Crear Funciones 1 Declara una función llamada saludar, que cada vez q
 
 """
 def greeting():
-    print("Hi World")
+    return("Hi World")
 
-greeting()
+print(greeting())
 
 
 
@@ -15,9 +15,9 @@ Práctica Crear Funciones 2 Declara una función llamada bienvenida, que tome co
 """
 
 def welcome_greeting(name):
-    print(f"¡Welcome {name}!")
+    return(f"¡Welcome {name}!")
 
-welcome_greeting("Julian")
+print(welcome_greeting("Julian"))
 
 
 """
@@ -27,6 +27,6 @@ Práctica Crear Funciones 3 Declara una función llamada cuadrado, que tome como
 
 def number_quadrade(n):
    n = n ** 2
-   print(n)
+   return n
 
-number_quadrade(2)
+print(number_quadrade(2))

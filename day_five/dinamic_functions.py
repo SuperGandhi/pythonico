@@ -18,8 +18,16 @@ Crea una función (suma_menores) que sume los números de una lista (almacenada 
 
 """
 
+def sum_menores(list_numbers):
+   sum = 0
+   for number in list_numbers:
+        if number > 0 and number < 1000:
+            sum += number
+   return sum
 
 
+result_sum = sum_menores([1,2,4,4,10])
+print(result_sum)
 
 
 

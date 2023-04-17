@@ -35,3 +35,14 @@ print(result_sum)
 Crea una función (cantidad_pares) que cuente la cantidad de números pares que existen en una lista (lista_numeros), y devuelva el resultado de dicha suma.
 
 """
+
+
+def amount_pairs(list_numbers):
+   amount = 0
+   for pair_number in list_numbers:
+        if pair_number % 2 == 0:
+           amount += 1
+   return amount 
+
+result_pair_sum = amount_pairs([2,4,7,8,9])
+print(result_pair_sum)

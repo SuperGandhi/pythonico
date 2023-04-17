@@ -41,7 +41,6 @@ def word_reverse(word):
     return reverse_word
       
 
-
 palabra = word_reverse("hola")
 print(palabra)
 

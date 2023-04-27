@@ -1,4 +1,4 @@
-from random import randint,choice,
+from random import randint,choice
 
 """
 Práctica sobre Interacción entre Funciones 1
@@ -20,7 +20,19 @@ Si la suma es mayor o igual a 10:
 
 
 """
+def lanzar_dados():
+    dado_a = randint(1,6)
+    dado_b = randint(1,6)
+    return dado_a,dado_b
 
+resultado1, resultado2 = lanzar_dados()
+print("El primer dado arrojó un resultado de", resultado1)
+print("El segundo dado arrojó un resultado de", resultado2)
+
+
+
+def evaluar_jugada(c,d):
+    pass
 
 
 

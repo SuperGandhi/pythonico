@@ -14,7 +14,7 @@ Si la suma es mayor a 6 y menor a 10:
 
 "La suma de tus dados es {suma_dados}. Tienes buenas chances"
 
-Si la suma es mayor o igual a 10:
+Si la suma es mayor o igual a 10:dado_a,dado_b
 
 "La suma de tus dados es {suma_dados}. Parece una jugada ganadora"
 
@@ -31,34 +31,20 @@ print("El segundo dado arrojó un resultado de", resultado2)
 
 
 
-def evaluar_jugada(c,d):
-    pass
+def evaluar_jugada(resultado1, resultado2):
+    total_result = resultado1 + resultado2
+    if total_result <= 6:
+        return f"La suma de tus dados es {total_result} . Lamentablemente"
+    elif total_result < 10:
+        return f"La suma de tus dados es {total_result} . Tienes buenas chances"
+    else:
+        return f"La suma de tus dados es {total_result} . Parece una jugada ganadora"
 
+resultado1, resultado2 = lanzar_dados()
+message= evaluar_jugada(resultado1, resultado2)
+print(message)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
 
 
 """

@@ -30,7 +30,6 @@ print("El primer dado arrojó un resultado de", resultado1)
 print("El segundo dado arrojó un resultado de", resultado2)
 
 
-
 def evaluar_jugada(resultado1, resultado2):
     total_result = resultado1 + resultado2
     if total_result <= 6:
@@ -44,8 +43,6 @@ resultado1, resultado2 = lanzar_dados()
 message= evaluar_jugada(resultado1, resultado2)
 print(message)
 
-        
-
 
 """
 
@@ -57,6 +54,35 @@ Por ejemplo, si se le proporciona la lista [1,2,15,7,2] debe devolver [1,2,7].
 Emplea la lista devuelta por la primera función y calcula el promedio de los valores de sus elementos, creando una nueva función llamada promedio().
 
 """
+def reducir_lista(lista_numeros):
+    # Eliminar duplicados y encontrar el valor máximo
+    numeros_unicos = list(set(lista_numeros))
+    max_valor = max(numeros_unicos)
+    
+    # Eliminar el valor máximo de la lista
+    numeros_unicos.remove(max_valor)
+    
+    return numeros_unicos
+
+
+def promedio(lista_numeros):
+    # Calcular la suma de los elementos
+    suma = sum(lista_numeros)
+    
+    # Calcular el promedio
+    promedio = suma / len(lista_numeros)
+    
+    return promedio
+
+
+# Ejemplo de uso
+lista = [1, 2, 15, 7, 2]
+lista_reducida = reducir_lista(lista)
+promedio_valores = promedio(lista_reducida)
+
+print("Lista reducida:", lista_reducida)
+print("Promedio de valores:", promedio_valores)
+
 
 
 

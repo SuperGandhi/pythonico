@@ -16,7 +16,9 @@ Práctica Métodos y Ayuda 2 Añade el elemento "naranja" como el cuarto element
 
 """
 
-
+frutas = ["mango", "banana", "cereza", "ciruela", "pomelo"]
+add_element = frutas.insert(5, "naranja")
+print(frutas)
 
 
 """

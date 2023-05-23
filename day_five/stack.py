@@ -1,5 +1,5 @@
 """
-    Implemented stack with procedimental programming
+    Implementation to stack with procedimental programming
     
 """
 stack = []
@@ -22,4 +22,16 @@ push(10)
 print(pop())
 print(pop())
 print(pop())
+
+
+"""
+    Implementation to stack with POO
+
+"""
+
+
+
+class Stack:
+    pass
+
     

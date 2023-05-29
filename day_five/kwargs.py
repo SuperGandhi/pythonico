@@ -13,7 +13,8 @@ def cantidad_atributos(**args, **kwargs):
 
 """
 
-
+def lista_atributos():
+    pass
 
 
 
@@ -36,3 +37,7 @@ def cantidad_atributos(**args, **kwargs):
     color_pelo: rubio
 
 """
+def describir_persona():
+    pass
+
+

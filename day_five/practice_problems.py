@@ -1,3 +1,7 @@
+
+
+
+
 """
     Crea una función llamada devolver_distintos() que reciba 3
     integers como parámetros.
@@ -9,6 +13,14 @@
     (incluidos) va a devolver el número de valor intermedio.
     
 """
+
+def devolver_distintos(*args):
+    if args > 15:
+       return args
+    elif args < 10:
+        return args
+    elif args <= 10 and >= 15:
+        return args
 
 
 

@@ -13,18 +13,26 @@
     (incluidos) va a devolver el número de valor intermedio.
     
 """
-
 def devolver_distintos(*args):
-    if args > 15:
-       return args
-    elif args < 10:
-        return args
-    elif args <= 10 and >= 15:
-        return args
+    if len(args) != 3:
+        return "La función debe recibir exactamente 3 enteros como argumentos."
 
+    suma = sum(args)
 
+    if suma > 15:
+        return max(args)
+    elif suma < 10:
+        return min(args)
+    else:
+        return sorted(args)[1]
 
+# Solicitar al usuario que ingrese los valores
+num1 = int(input("Ingrese el primer número: "))
+num2 = int(input("Ingrese el segundo número: "))
+num3 = int(input("Ingrese el tercer número: "))
 
+resultado = devolver_distintos(num1, num2, num3)
+print("El resultado es:", resultado)
 
 
 

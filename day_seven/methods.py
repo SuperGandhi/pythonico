@@ -6,10 +6,20 @@
 """
 
 class Perro:
-    pass
+    
+    def __init__(self,raza,color,años):
+        self.raza = raza
+        self.color = color
+        self.años = años
+
+    def ladrar(self):
+        print('Guau!')
 
 
+bull_terrier = Perro("bullterrier", "blanco", 10)
+bull_terrier.ladrar()
 
+print(f"Mi perro es un {bull_terrier.raza} de color {bull_terrier.color} y tiene {bull_terrier.años}")
 
 
 
@@ -21,13 +31,12 @@ class Perro:
 """
 
 class Mago:
-    pass
+    
+    def lanzar_hechizo(self):
+        print("¡Abracadabra!")
 
-
-
-
-
-
+merlin = Mago()
+merlin.lanzar_hechizo()
 
 
 """
@@ -39,4 +48,8 @@ class Mago:
 
 
 class Alarma:
-    pass
+    def postergar(self,cantidad_minutos):
+        print(f"La alarma ha sido pospuesta {cantidad_minutos} minutos")
+        
+alarma = Alarma()
+alarma.postergar(20)

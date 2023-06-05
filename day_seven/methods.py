@@ -53,3 +53,6 @@ class Alarma:
         
 alarma = Alarma()
 alarma.postergar(20)
+
+
+

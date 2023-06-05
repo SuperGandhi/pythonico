@@ -62,5 +62,5 @@ harry_potter = Personaje()
 harry_potter.especie = "Humano"
 harry_potter.magico = True
 harry_potter.edad = 17
-
+        
 

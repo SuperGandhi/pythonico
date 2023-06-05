@@ -5,15 +5,14 @@
 
 """
 
+class Casa:
+    
+    def __init__(self,color,cantidad_pisos ):
+        self.color = color
+        self.cantidad_pisos = cantidad_pisos
 
-
-
-
-
-
-
-
-
+casa_blanca = Casa("blanca", 4)
+print(f"Mi casa es {casa_blanca.color} y tiene {casa_blanca.cantidad_pisos} pisos")
 
 
 """
@@ -29,16 +28,15 @@
 
 """
 
+class Cubo:
+    
+    def __init__(self,caras,color):
+        self.caras = caras
+        self.color = color
+        
+cube = Cubo(10,"negro")
 
-
-
-
-
-
-
-
-
-
+print(f"Mi cubo tiene {cube.caras} caras y es de color {cube.color}")
 
 
 """
@@ -56,3 +54,13 @@
     edad = 17
 
 """
+
+class Personaje:
+    real = False
+
+harry_potter = Personaje()
+harry_potter.especie = "Humano"
+harry_potter.magico = True
+harry_potter.edad = 17
+
+

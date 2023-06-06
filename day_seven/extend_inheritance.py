@@ -3,40 +3,24 @@
 
     Completa el código suministrado a continuación para lograrlo.
 
-
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    10
-    11
-    12
-    13
-
-
 """
+class Padre:
+    
+    def trabajar(self):
+        print("Trabajando en el hospital")
 
 
+    def reir(self):
+        print("Hahahaha")
 
 
+class Madre():
+    def trabajar(self):
+        print("Trabajando con la Fiscalia")
 
 
-
-
-
-
-
-
-
-
-
-
-
+class Hija():
+    pass
 
 
 
@@ -60,33 +44,32 @@
 
     - amamantar()
 
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    10
-    11
-    12
-    13
-    14
-    15
-    16
-    17
-
-
 
 """
 
+class Vertebrado:
+    
+    vertebrado = True
+
+class Ave(Vertebrado):
+    
+    tiene_pico = True
+    
+    def poner_huevos(self):
+        print("Poniendo huevos")
 
 
+class Reptil(Vertebrado):
+    
+    venenoso = True
+    
+class Pez(Vertebrado):
 
-
-
+    def nadar(self):
+        print("Nadando")
+    
+    def poner_huevos(self):
+        print("Poniendo huevos")
 
 
 
@@ -111,29 +94,26 @@
     [1]: asegúrate de utilizar return seguido de una cadena de texto
 
 
-
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    10
-    11
-    12
-    13
-    14
-    15
-    16
-    17
-
-
-
-
-
-
-
 """
+
+
+
+class Padre():
+    color_ojos = "marrón"
+    tipo_pelo = "rulos"
+    altura = "media"
+    voz = "grave"
+    deporte_preferido = "tenis"
+    
+    def reir(self):
+        return "Jajaja"
+
+    def hobby(self):
+        return "Pinto madera en mi tiempo libre"
+
+def caminar(self):
+        return "Caminando con pasos largos y rápidos"
+
+class Hijo():
+        pass
+        "Juego videojuegos en mi tiempo libre"

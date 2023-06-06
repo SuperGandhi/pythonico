@@ -81,11 +81,6 @@ class Ornitorrinco(Ave,Reptil,Pez):
 
 
 
-
-
-
-
-
 """
     Un hijo ha heredado de su padre todas sus características, sin embargo, tienen diferentes hobbies. Logra que la clase Hijo herede de Padre todos sus métodos y atributos, sobreescribiendo el método hobby() para que se devuelva[1]: "Juego videojuegos en mi tiempo libre"
 
@@ -114,6 +109,7 @@ class Padre():
 def caminar(self):
         return "Caminando con pasos largos y rápidos"
 
-class Hijo():
-        pass
-        "Juego videojuegos en mi tiempo libre"
+class Hijo(Padre):
+
+        def hobby(self):
+            return  "Juego videojuegos en mi tiempo libre"

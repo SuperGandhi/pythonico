@@ -65,20 +65,6 @@ for personaje in personajes:
     
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 """
 
     Tienes tres clases de personajes en un juego, los cuales cuentan con sus métodos de defensa específicos.
@@ -87,3 +73,50 @@ for personaje in personajes:
 
 
 """
+
+# class Personaje:
+    
+#     def fire_defense(self):
+#         return "Fire defense"
+
+#     def ice_defense(self):
+#         return "Ice defense"
+        
+#     def wind_defense(self):
+#         return "Wind defense"
+
+
+# fire_offensive = Personaje()
+
+# def personaje_defender(self):
+#     print(fire_offensive.fire_defense())
+
+
+
+class Guerrero:
+    def defender(self):
+        return "Guerrero defendiendo con su escudo."
+
+class Mago:
+    def defender(self):
+        return "Mago invocando un escudo mágico."
+
+class Arquero:
+    def defender(self):
+        return "Arquero esquivando y utilizando su agilidad para defenderse."
+
+def personaje_defender(personaje):
+    if hasattr(personaje, 'defender') and callable(getattr(personaje, 'defender')):
+        return personaje.defender()
+    else:
+        return "El personaje no tiene un método de defensa válido."
+
+# Creación de instancias de personajes
+guerrero = Guerrero()
+mago = Mago()
+arquero = Arquero()
+
+# Llamada a la función personaje_defender() con diferentes personajes
+print(personaje_defender(guerrero))
+print(personaje_defender(mago))
+print(personaje_defender(arquero))

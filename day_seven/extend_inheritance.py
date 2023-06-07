@@ -1,6 +1,5 @@
 """
     Si la clase Hija ha heredado de su padre la forma de reir, y de su madre la vocación, y hoy tienen el mismo trabajo en la Fiscalía, crea la herencia múltiple que le permita a esta clase heredar correctamente de Padre y Madre.
-
     Completa el código suministrado a continuación para lograrlo.
 
 """
@@ -19,7 +18,11 @@ class Madre():
         print("Trabajando con la Fiscalia")
 
 
+<<<<<<< HEAD
 class Hija(Padre,Madre):
+=======
+class Hija(Madre, Padre):
+>>>>>>> 9dc115a10795075ad0b961981b9a31344a6c52b8
     pass
 
 
@@ -77,17 +80,13 @@ class Pez(Vertebrado):
         print("Poniendo huevos")
 
 
+class Ornitorrinco(Ave,Reptil,Pez):
+    
+    def __init__(self):
+        super().__init__()
 
-
-
-
-
-
-
-
-
-
-
+    def caminar(self):
+        print("Caminando ando")
 
 
 
@@ -119,6 +118,7 @@ class Padre():
 def caminar(self):
         return "Caminando con pasos largos y rápidos"
 
-class Hijo():
-        pass
-        "Juego videojuegos en mi tiempo libre"
+class Hijo(Padre):
+
+        def hobby(self):
+            return  "Juego videojuegos en mi tiempo libre"

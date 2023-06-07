@@ -19,9 +19,14 @@ class Madre():
         print("Trabajando con la Fiscalia")
 
 
-class Hija():
+class Hija(Padre,Madre):
     pass
 
+
+mi_hija = Hija()
+
+mi_hija.trabajar()
+mi_hija.reir()
 
 
 """

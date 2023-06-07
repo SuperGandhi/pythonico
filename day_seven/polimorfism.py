@@ -1,3 +1,4 @@
+
 """
     La función incorporada en Python len() tiene un comportamiento polimórfico, ya que calcula el largo de un objeto en función de su tipo (strings, listas, tuples, entre otros), devolviendo la cantidad de items o caracteres que lo componen.
 
@@ -8,25 +9,19 @@
 
 """
 
+ 
+# Definición de los objetos
+palabra = "Hola"
+lista = [1, 2, 3, 4, 5]
+tupla = (6, 7, 8, 9, 10)
 
+# Creación del iterador
+objetos = [palabra, lista, tupla]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Recorriendo los objetos y mostrando su longitud
+for objeto in objetos:
+    longitud = len(objeto)
+    print("El objeto", objeto, "tiene una longitud de", longitud)
 
 
 
@@ -42,6 +37,32 @@
 
 
 
+class Arquero:
+    
+    def attack(self):
+        return "Arquero : Damage 50"    
+
+class Mago:
+    
+    def attack(self):
+        return "Mago: Damage 30" 
+    
+class Samurai:
+    
+    def attack(self):
+        return "Samarui: Damage 70" 
+
+
+
+arquero = Arquero()
+mago = Mago()
+samurai = Samurai()
+
+personajes = [arquero,mago,samurai] 
+
+for personaje in personajes:
+    print(personaje.attack())
+    
 
 
 

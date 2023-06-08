@@ -24,11 +24,25 @@ class Persona:
     
 class Cliente(Persona):
     
-    def __init__(self,numero_cuenta,balance):
+    def __init__(self,nombre,apellido,numero_cuenta,balance=0):
+        super().__init__(nombre,apellido)
         self.numero_cuenta = numero_cuenta
         self.balance = balance
         
         
     def mostrar_datos_cliente(self):
+        
+        print("Datos de cliente: ")
+        print(f"Nombre: {self.nombre}")  
+        print(f"Apellido: {self.apellido}")  
+        print(f"Numero de cta: {self.numero_cuenta}")
+        print(f"Balance: {self.numero_cuenta}")  
+          
+        
+        
+    def depositar(self):
+        pass
+    
+    def retirar(self):
         pass
     

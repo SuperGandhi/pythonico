@@ -14,5 +14,21 @@
                     crear_cliente()
                     inicio()
     
-
 """
+
+class Persona:
+    
+    def __init__(self, nombre, apellido):
+        self.nombre = nombre
+        self.apellido = apellido
+    
+class Cliente(Persona):
+    
+    def __init__(self,numero_cuenta,balance):
+        self.numero_cuenta = numero_cuenta
+        self.balance = balance
+        
+        
+    def mostrar_datos_cliente(self):
+        pass
+    

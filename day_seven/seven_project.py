@@ -17,32 +17,65 @@
 """
 
 class Persona:
-    
     def __init__(self, nombre, apellido):
         self.nombre = nombre
         self.apellido = apellido
-    
+
+
 class Cliente(Persona):
-    
-    def __init__(self,nombre,apellido,numero_cuenta,balance=0):
-        super().__init__(nombre,apellido)
+    def __init__(self, nombre, apellido, numero_cuenta, balance=0):
+        super().__init__(nombre, apellido)
         self.numero_cuenta = numero_cuenta
         self.balance = balance
-        
-        
-    def mostrar_datos_cliente(self):
-        
-        print("Datos de cliente: ")
-        print(f"Nombre: {self.nombre}")  
-        print(f"Apellido: {self.apellido}")  
-        print(f"Numero de cta: {self.numero_cuenta}")
-        print(f"Balance: {self.numero_cuenta}")  
-          
-        
-        
-    def depositar(self):
-        pass
-    
-    def retirar(self):
-        pass
-    
+
+    def imprimir_datos(self):
+        print("Datos del Cliente:")
+        print("Nombre: ", self.nombre)
+        print("Apellido: ", self.apellido)
+        print("Número de Cuenta: ", self.numero_cuenta)
+        print("Balance: ", self.balance)
+
+    def depositar(self, cantidad):
+        self.balance += cantidad
+        print("Se depositó", cantidad, "a su cuenta. Balance actual:", self.balance)
+
+    def retirar(self, cantidad):
+        if cantidad <= self.balance:
+            self.balance -= cantidad
+            print("Se retiró", cantidad, "de su cuenta. Balance actual:", self.balance)
+        else:
+            print("Saldo insuficiente.")
+
+
+def crear_cliente():
+    nombre = input("Ingrese su nombre: ")
+    apellido = input("Ingrese su apellido: ")
+    numero_cuenta = input("Ingrese el número de cuenta: ")
+    cliente = Cliente(nombre, apellido, numero_cuenta)
+    return cliente
+
+
+def inicio():
+    cliente = crear_cliente()
+    while True:
+        print("\n1. Imprimir datos del cliente")
+        print("2. Depositar dinero")
+        print("3. Retirar dinero")
+        print("4. Salir")
+        opcion = int(input("Ingrese una opción: "))
+
+        if opcion == 1:
+            cliente.imprimir_datos()
+        elif opcion == 2:
+            cantidad = float(input("Ingrese la cantidad a depositar: "))
+            cliente.depositar(cantidad)
+        elif opcion == 3:
+            cantidad = float(input("Ingrese la cantidad a retirar: "))
+            cliente.retirar(cantidad)
+        elif opcion == 4:
+            break
+        else:
+            print("Opción inválida. Intente nuevamente.")
+
+
+inicio()

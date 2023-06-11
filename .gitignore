@@ -1,2 +1,24 @@
-key = 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
-__pycache__
+# Directorios
+venv/
+__pycache__/
+
+# Archivos
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Archivos de variables de entorno
+.env
+.env.*
+
+# Archivos de configuración personalizados
+config.ini
+
+# Archivos de dependencias o entorno de desarrollo
+requirements.txt
+dev-requirements.txt
+
+# Archivos generados por el IDE
+.vscode/
+

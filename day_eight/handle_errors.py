@@ -107,5 +107,17 @@ else:
 """
 
 def abrir_archivo(nombre_archivo):
-    archivo = open(nombre_archivo)
+        
+        try:
+            archivo = open(nombre_archivo, 'r')
+            print("Abriendo exitosamente")
+        except FileNotFoundError:
+            print("El archivo no fue encontrado")
+        except Exception:
+            print("Error desconocido")
+        finally:
+            print("Finalizando ejecución")
+            
 #MENSAJES EN PANTALLA:
+
+abrir_archivo("README.md")

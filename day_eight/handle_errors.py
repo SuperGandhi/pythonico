@@ -56,11 +56,23 @@ except:
 else:
 ... etc.
 """
-def cociente(num1,num2):    
-    print(num1/num2)
+
+def cociente(num1,num2):
+   
+    try:    
+        result =round(num1 / num2)
+        print(f"Result : {result}")
+    except TypeError:
+       print("Los argumentos a ingresar deben ser números")
+    except ZeroDivisionError:
+        print("El segundo argumento no debe ser cero")
+
+        
 #MENSAJE EN PANTALLA
 
-
+cociente(10,2)
+cociente(0,1)
+cociente(10,0)
 
 
 

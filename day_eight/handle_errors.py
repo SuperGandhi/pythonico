@@ -16,9 +16,19 @@ else:
 """
 
 def suma(num1,num2):
-    print(num1+num2)
+    
+    try:     
+        result = num1 + num2
+        print(f"The result is : {result}")
+    except:
+        print("Error inesperado")
+    else:
+        print("Thanks!")
 
 
+suma(11,12)
+suma("11", 12)
+suma(12, "11")
 
 
 """

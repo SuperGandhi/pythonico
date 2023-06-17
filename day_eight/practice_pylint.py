@@ -1,4 +1,0 @@
-"""
-    Here practice pylint
-    nowww
-"""

@@ -1,14 +1,21 @@
+
 """
     Crea un generador (almacenado en la variable generador) que sea capaz de devolver una secuencia infinita de números, iniciando desde el 1, y entregando un número consecutivo superior cada vez que sea llamada mediante next.
 
 """
 
+def generator_infinito():
+    num = 1
+    while True:
+        yield num
+        num += 1
+        
+generator = generator_infinito()
 
-
-
-
-
-
+print(next(generator))
+print(next(generator))
+print(next(generator))
+print(next(generator))
 
 
 

@@ -23,7 +23,13 @@ print("Total price:", desktop.price())  # Output: "Total price: 50 + 20 + 200 + 
 del desktop
 
 
-
+# class Snake:
+#     def __init__(self, victims):
+#         self.victims = victims
+        
+#     def increment(self):
+#         self.victims += 1
+    
 
     
     

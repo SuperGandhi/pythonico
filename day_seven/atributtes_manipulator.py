@@ -8,5 +8,13 @@ class Coche:
 
 
 c = Coche("Rojo", "Coupe", "Chevrolet")
+setattr(c, "num_ruedas", 5)
+
+print(getattr(c, "marca"))
+
+delattr(c, "marca")
+
+print(hasattr(c, "marca"))
+
 print(vars(c))
 

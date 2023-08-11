@@ -120,3 +120,38 @@ arquero = Arquero()
 print(personaje_defender(guerrero))
 print(personaje_defender(mago))
 print(personaje_defender(arquero))
+
+
+# other example
+
+class Animals:
+    
+    def __init__(self, message):
+        self.message = message
+        
+    def talk(self):
+        print(self.message)
+        
+class Dog(Animals):
+    
+    # modificar métodos heredados de una clase padre
+    def talk(self):
+        print("I don't talk , but I do guau!")
+
+
+class Fish(Animals):
+    
+    def talk(self):
+        print("I dont talk")
+        
+        
+dog = Dog("Guau!")
+dog.talk()        
+        
+        
+        
+        
+        
+        
+        
+        

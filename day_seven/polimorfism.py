@@ -146,7 +146,9 @@ class Fish(Animals):
         
         
 dog = Dog("Guau!")
-dog.talk()        
+dog.talk()
+
+        
         
         
         

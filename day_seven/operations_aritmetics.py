@@ -14,8 +14,10 @@ class Calculator:
         return self.a * self.b
     
     def division(self):
-        return self.a / self.b
-    
+        try:
+            return self.a / self.b
+        except ZeroDivisionError:
+            return "No puedes dividir por cero"
 
-result = Calculator(10, 20)
-print(result.suma())
+result = Calculator(20, 0)
+print(result.division())

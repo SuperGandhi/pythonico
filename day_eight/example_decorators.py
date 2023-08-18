@@ -20,7 +20,10 @@
 # mayuscula_decorada = decorar_saludo(mayusculas)
 # mayuscula_decorada("hola")
 
-class Casa:
+# class Casa:
 
-	def __init__(self, precio):
-		self.__precio = precio
+# 	def __init__(self, precio):
+# 		self.__precio = precio
+  
+  
+# @property

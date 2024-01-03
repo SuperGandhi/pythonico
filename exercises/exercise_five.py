@@ -1,10 +1,14 @@
-def age_high():
-    user_entry = int(input("Ingrese su edad: "))
+def age_high(user):
+    return user.age < 17
 
-    if user_entry >= 18:
-        return "Es mayor de edad"
-    else:
-        return "Es menor de edad"
+class User:
+    def __init__(self,age):
+        self.age = age
 
-result = age_high()
-print(result)
+user = User(15)
+user2 = User(20)
+
+result1 = age_high(user)
+result2 = age_high(user2)
+
+print(result1, result2)

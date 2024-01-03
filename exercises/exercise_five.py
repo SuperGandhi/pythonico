@@ -12,3 +12,5 @@ result1 = age_high(user)
 result2 = age_high(user2)
 
 print(result1, result2)
+
+
